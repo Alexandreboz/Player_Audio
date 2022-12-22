@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    --dark: #000000;
+    /* --color-bg: rgb(255, 218, 158); */
+    --color-white: #f1f1f1;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg);
+
+}
+
+.musique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fond img {
+    display: block;
+    width: 1536px;
+    height: 100vh;
+    /* border-radius: 50px; */
+}
+
+.player {
+    margin-top: -120px;
+    /* position: relative; */
+    width: 50%;
+    min-height: 90px;
+    border-radius: 999px;
+    /* padding: 1rem 2rem; */
+    background: var(--dark);
+    /* opacity: 0.3; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 18px;
+}
+
+.icon {
+    width: 10px;
+    height: 50px;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    /* opacity: none; */
+}
+
+.dofus2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    /* display: none; */
+}
+
+.dbz2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    /* display: none; */
+}
+
+.lsa2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    /* display: none; */
+}
+
+.pokemon2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    /* display: none; */
+}
+
+.titre {
+    color: var(--color-white);
+    font-weight: 50;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bar {
+    display: flex;
+    width: 700px;
+    padding-left: 20px;
+}
+
+.btns {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.btns span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.btns span:active {
+    color: orangered
+}
+
+.btns span.active {
+    color: orangered
+}
+
+.btns span.play-pause {
+    width: 30px;
+    height: 30px;
+}
+
+.btns span ion-icon {
+    font-size: 1em;
+}
+
+.btns span.play-pause ion-icon {
+    font-size: 2em
+}
+
+.mute {
+    font-size: 1em;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.fort {
+    font-size: 1em;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-white);
+} 
+
+/*accueil vers lecteur*/
+.accueil {
+    width: 1536px;
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("fond/accueil.jpeg"); */
+    /* display: none; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.lecteur {
+    display: none;
+}
+
+.centre {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.casque {
+    height: 650px;
+    background-size: contain;
+    padding-right: 0px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -105px;
+}
+
+.playAccueil {
+    color: white;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    margin-left: 360px;
+    margin-top: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.playAccueil:active{
+    color: orangered;
+}
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+    width: 310px;
+    z-index: 2;
+}
+
+.playlist h2 {
+    padding-top: 130px;
+}
+
+.playlist ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style-type: none;
+    font-size: large;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:active {
+    color: orangered
+}
+
+
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #ffffff;
+    /* -webkit-transition: .2s; */
+    transition: opacity .2s;
+    margin-top: 8px;
+    /* display: none; */
+    /* transform: rotate(270deg); */
+    /* height: 10px; */
+    /* width: 30%; */
+    /* margin-right: -150px; */
+}
+
+.volume2 {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* width: 15px;
+    height: 15px; */
+    background: white;
+    cursor: grab;
+    /* border-radius: 100%; */
+}
+
+.volume_slider:hover {
+    opacity: 1.0;
+}

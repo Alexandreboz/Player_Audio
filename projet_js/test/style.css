@@ -1,0 +1,11 @@
+body{
+    background-color: brown;
+}
+.pause {
+    background-image: url(../icon_barre/pause.png);
+    background-repeat: no-repeat;
+}
+.play {
+    background-image: url(../icon_barre/play.png);
+    background-repeat: no-repeat;
+}
